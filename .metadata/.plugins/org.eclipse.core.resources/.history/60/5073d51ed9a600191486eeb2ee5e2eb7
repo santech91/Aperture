@@ -1,0 +1,5 @@
+package pages.Actions;
+
+public class LoginAction {
+
+}
