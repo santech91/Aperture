@@ -1,214 +1,430 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("Account.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/Features/OrderToCash.feature");
 formatter.feature({
   "line": 1,
-  "name": "Gspann Aperture Account Create",
+  "name": "Gspann Apeture SOW Create",
   "description": "",
-  "id": "gspann-aperture-account-create",
+  "id": "gspann-apeture-sow-create",
   "keyword": "Feature"
 });
-formatter.before({
-  "duration": 9507754500,
-  "status": "passed"
-});
-formatter.scenario({
+formatter.scenarioOutline({
   "line": 3,
-  "name": "Verify Account Create",
+  "name": "Validate OrderToCash",
   "description": "",
-  "id": "gspann-aperture-account-create;verify-account-create",
-  "type": "scenario",
-  "keyword": "Scenario"
+  "id": "gspann-apeture-sow-create;validate-ordertocash",
+  "type": "scenario_outline",
+  "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 4,
+  "line": 5,
   "name": "User navigate to Aperture website with Register Mail Id \u0026 Password \"https://qa.aperture.gspann.com\"",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 5,
+  "line": 6,
   "name": "User able to see Apertute landing page",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 6,
-  "name": "User click on \"Account\" from header",
-  "keyword": "When "
-});
-formatter.step({
   "line": 7,
-  "name": "User able to see Account landing page",
-  "keyword": "Then "
+  "name": "User click on OrderTOCash",
+  "keyword": "When "
 });
 formatter.step({
   "line": 8,
-  "name": "User click on \"Add Account\" in Account page",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 9,
-  "name": "User able to see Account landing page",
+  "name": "User able to see drop-down value of SOW",
   "keyword": "Then "
 });
 formatter.step({
+  "line": 9,
+  "name": "User click on SOW",
+  "keyword": "When "
+});
+formatter.step({
   "line": 10,
-  "name": "User fill-up form",
+  "name": "User able to see landing page of SOW",
   "keyword": "Then "
 });
 formatter.step({
   "line": 11,
-  "name": "User click on \"Create Account\" to create Account",
+  "name": "User click On AddSOW",
   "keyword": "Then "
 });
 formatter.step({
   "line": 12,
-  "name": "User able to see Account create landing page",
+  "name": "User select Account in SOW",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 13,
+  "name": "User Enter \"\u003cSOWname\u003e\" SOWname",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 14,
+  "name": "User Select \"\u003cStartDate\u003e\" StartDate",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 15,
+  "name": "User Select \"\u003cEndDate\u003e\" EndDate",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 16,
+  "name": "User Select the Currency",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 17,
+  "name": "User Enter \"\u003cMiscBill\u003e\" MiscBill",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 18,
+  "name": "User Enter \"\u003cRemarks\u003e\" Remarks",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 19,
+  "name": "User able to see WBS",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 20,
+  "name": "User Select the Project",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 21,
+  "name": "User Select the Alloction type Billable",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 22,
+  "name": "User Enter \"\u003cRollid\u003e\" IstRollid",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 23,
+  "name": "User Enter \"\u003cHourlyRate\u003e\" IstHourly",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 24,
+  "name": "User Enter \"\u003cContractedHour\u003e\" IstContractedHour",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 25,
+  "name": "User click on Action to Add Project",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 26,
+  "name": "User Select the SecProject",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 27,
+  "name": "User Select the Alloction type Non-Billable",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 28,
+  "name": "User Enter \"\u003cRollid2\u003e\" SecRollid",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 29,
+  "name": "User Enter \"\u003cContractedHour2\u003e\" SecContractedHour",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 30,
+  "name": "User click on Action to Add Project",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 31,
+  "name": "User Select the ThrProject",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 32,
+  "name": "User Select the Alloction type Buffer",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 33,
+  "name": "User Enter \"\u003cRollid3\u003e\" ThrRollId",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 34,
+  "name": "User Enter \"\u003cContractedHour3\u003e\" ThrContractedHour",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 35,
+  "name": "User click on Create button",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 36,
+  "name": "User able to see SOW landing page",
   "keyword": "And "
 });
-formatter.match({
-  "arguments": [
-    {
-      "val": "https://qa.aperture.gspann.com",
-      "offset": 68
-    }
-  ],
-  "location": "Login.user_navigate_to_Aperture_website_with_Register_Mail_Id_Password(String)"
-});
-formatter.result({
-  "duration": 22967002100,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Login.user_able_to_see_Apertute_landing_page()"
-});
-formatter.result({
-  "duration": 38790900,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Account",
-      "offset": 15
-    }
-  ],
-  "location": "Account.user_click_on_from_header(String)"
-});
-formatter.result({
-  "duration": 5174845100,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Account.user_able_to_see_Account_landing_page()"
-});
-formatter.result({
-  "duration": 34528500,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Add Account",
-      "offset": 15
-    }
-  ],
-  "location": "Account.user_click_on_in_Account_page(String)"
-});
-formatter.result({
-  "duration": 140816700,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Account.user_able_to_see_Account_landing_page()"
-});
-formatter.result({
-  "duration": 32896600,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Account.user_fill_up_form()"
-});
-formatter.result({
-  "duration": 33344010500,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Create Account",
-      "offset": 15
-    }
-  ],
-  "location": "Account.user_click_on_to_create_Account(String)"
-});
-formatter.result({
-  "duration": 5081964000,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Account.user_able_to_see_Account_create_landing_page()"
-});
-formatter.result({
-  "duration": 30033831400,
-  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[contains(text(),\u0027Account:\u0027)]\"}\n  (Session info: chrome\u003d75.0.3770.100)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.14.0\u0027, revision: \u0027aacccce0\u0027, time: \u00272018-08-02T20:19:58.91Z\u0027\nSystem info: host: \u0027NODE772\u0027, ip: \u0027192.168.43.31\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_181\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\\Users\\SANTOS~1.KUM\\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:61301}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 8d2eb9f994d3cd5f453a4deacda768cf\n*** Element info: {Using\u003dxpath, value\u003d//span[contains(text(),\u0027Account:\u0027)]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy18.isDisplayed(Unknown Source)\r\n\tat pages.Actions.AccountAction.displayAccount(AccountAction.java:88)\r\n\tat stepDefinations.Account.user_able_to_see_Account_create_landing_page(Account.java:63)\r\n\tat ✽.And User able to see Account create landing page(Account.feature:12)\r\n",
-  "status": "failed"
-});
-formatter.embedding("image/png", "embedded0.png");
-formatter.after({
-  "duration": 1649919400,
-  "status": "passed"
-});
-formatter.uri("Login.feature");
-formatter.feature({
-  "line": 1,
-  "name": "Gspann Aperture Login",
+formatter.examples({
+  "line": 38,
+  "name": "",
   "description": "",
-  "id": "gspann-aperture-login",
-  "keyword": "Feature"
+  "id": "gspann-apeture-sow-create;validate-ordertocash;",
+  "rows": [
+    {
+      "cells": [
+        "SOWname",
+        "StartDate",
+        "EndDate",
+        "MiscBill",
+        "Remarks",
+        "Rollid",
+        "HourlyRate",
+        "ContractedHour",
+        "Rollid2",
+        "ContractedHour2",
+        "Rollid3",
+        "ContractedHour3"
+      ],
+      "line": 40,
+      "id": "gspann-apeture-sow-create;validate-ordertocash;;1"
+    },
+    {
+      "cells": [
+        "Test2",
+        "30 Jul, 2019",
+        "10 Aug, 2019",
+        "10000",
+        "Good",
+        "Dev",
+        "500",
+        "100",
+        "Testing",
+        "100",
+        "Devops",
+        "100"
+      ],
+      "line": 41,
+      "id": "gspann-apeture-sow-create;validate-ordertocash;;2"
+    }
+  ],
+  "keyword": "Examples"
 });
 formatter.before({
-  "duration": 6464076900,
+  "duration": 6672527300,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 3,
-  "name": "Verify Login page",
+  "line": 41,
+  "name": "Validate OrderToCash",
   "description": "",
-  "id": "gspann-aperture-login;verify-login-page",
+  "id": "gspann-apeture-sow-create;validate-ordertocash;;2",
   "type": "scenario",
-  "keyword": "Scenario"
+  "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 4,
+  "line": 5,
   "name": "User navigate to Aperture website with Register Mail Id \u0026 Password \"https://qa.aperture.gspann.com\"",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 5,
+  "line": 6,
   "name": "User able to see Apertute landing page",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 6,
-  "name": "User click on \"My-Profile\" under name",
-  "keyword": "When "
-});
-formatter.step({
   "line": 7,
-  "name": "User able to see Profile landing page",
-  "keyword": "Then "
+  "name": "User click on OrderTOCash",
+  "keyword": "When "
 });
 formatter.step({
   "line": 8,
-  "name": "User click on \"History\"",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 9,
-  "name": "User able see history details landingpage",
+  "name": "User able to see drop-down value of SOW",
   "keyword": "Then "
 });
 formatter.step({
+  "line": 9,
+  "name": "User click on SOW",
+  "keyword": "When "
+});
+formatter.step({
   "line": 10,
-  "name": "User click on \"Sign-out\" able to logout",
+  "name": "User able to see landing page of SOW",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 11,
+  "name": "User click On AddSOW",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 12,
+  "name": "User select Account in SOW",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 13,
+  "name": "User Enter \"Test2\" SOWname",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 14,
+  "name": "User Select \"30 Jul, 2019\" StartDate",
+  "matchedColumns": [
+    1
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 15,
+  "name": "User Select \"10 Aug, 2019\" EndDate",
+  "matchedColumns": [
+    2
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 16,
+  "name": "User Select the Currency",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 17,
+  "name": "User Enter \"10000\" MiscBill",
+  "matchedColumns": [
+    3
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 18,
+  "name": "User Enter \"Good\" Remarks",
+  "matchedColumns": [
+    4
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 19,
+  "name": "User able to see WBS",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 20,
+  "name": "User Select the Project",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 21,
+  "name": "User Select the Alloction type Billable",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 22,
+  "name": "User Enter \"Dev\" IstRollid",
+  "matchedColumns": [
+    5
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 23,
+  "name": "User Enter \"500\" IstHourly",
+  "matchedColumns": [
+    6
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 24,
+  "name": "User Enter \"100\" IstContractedHour",
+  "matchedColumns": [
+    7
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 25,
+  "name": "User click on Action to Add Project",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 26,
+  "name": "User Select the SecProject",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 27,
+  "name": "User Select the Alloction type Non-Billable",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 28,
+  "name": "User Enter \"Testing\" SecRollid",
+  "matchedColumns": [
+    8
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 29,
+  "name": "User Enter \"100\" SecContractedHour",
+  "matchedColumns": [
+    9
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 30,
+  "name": "User click on Action to Add Project",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 31,
+  "name": "User Select the ThrProject",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 32,
+  "name": "User Select the Alloction type Buffer",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 33,
+  "name": "User Enter \"Devops\" ThrRollId",
+  "matchedColumns": [
+    10
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 34,
+  "name": "User Enter \"100\" ThrContractedHour",
+  "matchedColumns": [
+    11
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 35,
+  "name": "User click on Create button",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 36,
+  "name": "User able to see SOW landing page",
   "keyword": "And "
 });
 formatter.match({
@@ -221,70 +437,300 @@ formatter.match({
   "location": "Login.user_navigate_to_Aperture_website_with_Register_Mail_Id_Password(String)"
 });
 formatter.result({
-  "duration": 80712843000,
+  "duration": 76847373500,
   "status": "passed"
 });
 formatter.match({
   "location": "Login.user_able_to_see_Apertute_landing_page()"
 });
 formatter.result({
-  "duration": 33518100,
+  "duration": 5077429300,
+  "status": "passed"
+});
+formatter.match({
+  "location": "OrderToCash.user_click_on_OrderTOCash()"
+});
+formatter.result({
+  "duration": 3084590600,
+  "status": "passed"
+});
+formatter.match({
+  "location": "OrderToCash.user_able_to_see_drop_down_value_of_SOW()"
+});
+formatter.result({
+  "duration": 32786300,
+  "status": "passed"
+});
+formatter.match({
+  "location": "OrderToCash.user_click_on_SOW()"
+});
+formatter.result({
+  "duration": 3067507800,
+  "status": "passed"
+});
+formatter.match({
+  "location": "OrderToCash.user_able_to_see_landing_page_of_SOW()"
+});
+formatter.result({
+  "duration": 41936600,
+  "status": "passed"
+});
+formatter.match({
+  "location": "OrderToCash.user_click_On_AddSOW()"
+});
+formatter.result({
+  "duration": 3174467900,
+  "status": "passed"
+});
+formatter.match({
+  "location": "OrderToCash.user_select_Account_in_SOW()"
+});
+formatter.result({
+  "duration": 5189904500,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "My-Profile",
-      "offset": 15
+      "val": "Test2",
+      "offset": 12
     }
   ],
-  "location": "Login.user_click_on_under_name(String)"
+  "location": "OrderToCash.user_Enter_SOWname(String)"
 });
 formatter.result({
-  "duration": 8864505800,
+  "duration": 86436200,
   "status": "passed"
 });
 formatter.match({
-  "location": "Login.user_able_to_see_Profile_landing_page()"
+  "arguments": [
+    {
+      "val": "30 Jul, 2019",
+      "offset": 13
+    }
+  ],
+  "location": "OrderToCash.user_Select_StartDate(String)"
 });
 formatter.result({
-  "duration": 3574420800,
-  "error_message": "java.lang.AssertionError: expected [true] but found [false]\r\n\tat org.testng.Assert.fail(Assert.java:94)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:513)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:135)\r\n\tat org.testng.Assert.assertEquals(Assert.java:116)\r\n\tat org.testng.Assert.assertEquals(Assert.java:305)\r\n\tat org.testng.Assert.assertEquals(Assert.java:315)\r\n\tat stepDefinations.Login.user_able_to_see_Profile_landing_page(Login.java:41)\r\n\tat ✽.Then User able to see Profile landing page(Login.feature:7)\r\n",
-  "status": "failed"
+  "duration": 226569500,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "History",
-      "offset": 15
+      "val": "10 Aug, 2019",
+      "offset": 13
     }
   ],
-  "location": "Login.user_click_on(String)"
+  "location": "OrderToCash.user_Select_EndDate(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 140408600,
+  "status": "passed"
 });
 formatter.match({
-  "location": "Login.user_able_see_history_details_landingpage()"
+  "location": "OrderToCash.user_Select_the_Currency()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2166127500,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Sign-out",
-      "offset": 15
+      "val": "10000",
+      "offset": 12
     }
   ],
-  "location": "Login.user_click_on_able_to_logout(String)"
+  "location": "OrderToCash.user_Enter_MiscBill(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 163889800,
+  "status": "passed"
 });
-formatter.embedding("image/png", "embedded1.png");
+formatter.match({
+  "arguments": [
+    {
+      "val": "Good",
+      "offset": 12
+    }
+  ],
+  "location": "OrderToCash.user_Enter_Remarks(String)"
+});
+formatter.result({
+  "duration": 94126400,
+  "status": "passed"
+});
+formatter.match({
+  "location": "OrderToCash.user_able_to_see_WBS()"
+});
+formatter.result({
+  "duration": 34374600,
+  "status": "passed"
+});
+formatter.match({
+  "location": "OrderToCash.user_Select_the_Project()"
+});
+formatter.result({
+  "duration": 2167141100,
+  "status": "passed"
+});
+formatter.match({
+  "location": "OrderToCash.user_Select_the_Alloction_type_Billable()"
+});
+formatter.result({
+  "duration": 2161996700,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Dev",
+      "offset": 12
+    }
+  ],
+  "location": "OrderToCash.user_Enter_IstRollid(String)"
+});
+formatter.result({
+  "duration": 101930400,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "500",
+      "offset": 12
+    }
+  ],
+  "location": "OrderToCash.user_Enter_IstHourly(String)"
+});
+formatter.result({
+  "duration": 120152500,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "100",
+      "offset": 12
+    }
+  ],
+  "location": "OrderToCash.user_Enter_IstContractedHour(String)"
+});
+formatter.result({
+  "duration": 114072800,
+  "status": "passed"
+});
+formatter.match({
+  "location": "OrderToCash.user_click_on_Action_to_Add_Project()"
+});
+formatter.result({
+  "duration": 141960100,
+  "status": "passed"
+});
+formatter.match({
+  "location": "OrderToCash.user_Select_the_SecProject()"
+});
+formatter.result({
+  "duration": 2155884200,
+  "status": "passed"
+});
+formatter.match({
+  "location": "OrderToCash.user_Select_the_Alloction_type_Non_Billable()"
+});
+formatter.result({
+  "duration": 2158714200,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Testing",
+      "offset": 12
+    }
+  ],
+  "location": "OrderToCash.user_Enter_SecRollid(String)"
+});
+formatter.result({
+  "duration": 200140800,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "100",
+      "offset": 12
+    }
+  ],
+  "location": "OrderToCash.user_Enter_SecContractedHour(String)"
+});
+formatter.result({
+  "duration": 116428200,
+  "status": "passed"
+});
+formatter.match({
+  "location": "OrderToCash.user_click_on_Action_to_Add_Project()"
+});
+formatter.result({
+  "duration": 104188600,
+  "status": "passed"
+});
+formatter.match({
+  "location": "OrderToCash.user_Select_the_ThrProject()"
+});
+formatter.result({
+  "duration": 2130036300,
+  "status": "passed"
+});
+formatter.match({
+  "location": "OrderToCash.user_Select_the_Alloction_type_Buffer()"
+});
+formatter.result({
+  "duration": 6178816400,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Devops",
+      "offset": 12
+    }
+  ],
+  "location": "OrderToCash.user_Enter_ThrRollId(String)"
+});
+formatter.result({
+  "duration": 149980200,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "100",
+      "offset": 12
+    }
+  ],
+  "location": "OrderToCash.user_Enter_ThrContractedHour(String)"
+});
+formatter.result({
+  "duration": 118842200,
+  "status": "passed"
+});
+formatter.match({
+  "location": "OrderToCash.user_click_on_Create_button()"
+});
+formatter.result({
+  "duration": 3079300000,
+  "status": "passed"
+});
+formatter.match({
+  "location": "OrderToCash.user_able_to_see_SOW_landing_page()"
+});
+formatter.result({
+  "duration": 35202500,
+  "status": "passed"
+});
 formatter.after({
-  "duration": 1669985000,
+  "duration": 1127044500,
   "status": "passed"
 });
 });

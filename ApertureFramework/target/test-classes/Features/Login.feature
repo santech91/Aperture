@@ -1,6 +1,6 @@
 Feature: Gspann Aperture Login
 
-  Scenario: Verify Login page
+  Scenario: Validate Login page
     Given User navigate to Aperture website with Register Mail Id & Password "https://qa.aperture.gspann.com"
     Then  User able to see Apertute landing page
     When  User click on "My-Profile" under name
