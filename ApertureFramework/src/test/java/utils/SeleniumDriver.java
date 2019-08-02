@@ -8,8 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.gspann.aperture.pages.Actions.SignInAction;
-import com.gspann.aperture.pages.Locators.SignInLocator;
+
 
 
 public class SeleniumDriver {
@@ -41,11 +40,11 @@ private static SeleniumDriver seleniumDriver;
 		driver.get(url);
 		
 		//email
-		waitDriver.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@placeholder='someone@gspann.com']"))).sendKeys("santosh.kumar@gspann.com");
+		waitDriver.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@placeholder='someone@gspann.com']"))).sendKeys("");
 				//next
 		waitDriver.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@type='submit']"))).click();
 		        //pass
-		waitDriver.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@name='passwd']"))).sendKeys("Ersantosh89@");
+		waitDriver.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@name='passwd']"))).sendKeys("");
 		        //submit
 		waitDriver.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@type='submit']"))).click();
 		        //yes
